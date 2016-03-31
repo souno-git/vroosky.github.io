@@ -1,0 +1,30 @@
+header nav{
+    postition:absolute;
+    right: 25px;
+    top: 97px;
+}
+header table tr td {
+    float: left;
+    padding-left: 6px;
+    }
+    header table tr td a {
+        float: left;
+        color: black;
+        text-decoration: none;
+        width: 80px;
+        text-align: center;
+        line-height: 31px;
+        font-size: 14px;
+    }
+    header table tr td a:hover,
+    header table tr td a.current {
+        background: gray;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+    }
+
+body table tr td img{
+    align-self: center;
+}
+

@@ -13,7 +13,7 @@ function auto_f()
 }
 //window.onload=warn;
 function warn(){
-	swal("欢迎来到迭〇个人网站！");
+	swal("欢迎来到沈雅个人网站！");
 }
 function rain(){
 	window.location.href = "./rain.html";

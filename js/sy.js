@@ -11,8 +11,13 @@ function auto_f()
     auto_symbol=1;
     auto_time=setInterval("freshening()",5000); //使用定时器每５秒自动刷新！
 }
-
-
+//window.onload=warn;
+function warn(){
+	swal("欢迎来到迭〇个人网站！");
+}
+function rain(){
+	window.location.href = "./rain.html";
+}
 function index()
 {
     window.location.href = "./index.html";

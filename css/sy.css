@@ -1,3 +1,8 @@
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #fff;
+    background: #5CACEE;
+}
 header nav{
     postition:absolute;
     right: 25px;
@@ -9,7 +14,7 @@ header table tr td {
     }
     header table tr td a {
         float: left;
-        color: black;
+        color: #FFFFFF;
         text-decoration: none;
         width: 80px;
         text-align: center;
@@ -26,5 +31,10 @@ header table tr td {
 
 body table tr td img{
     align-self: center;
+}
+body p a{
+        color: #FFFFFF;
+        width: 80px;
+        font-size: 16px;
 }
 

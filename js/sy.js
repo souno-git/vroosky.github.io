@@ -28,6 +28,10 @@ function about()
 {
     window.location.href = "./about.html";
 }
+function cv()
+{
+    window.location.href = "./cv/index.html";
+}
 
 function freshening()
 {

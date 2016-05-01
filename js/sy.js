@@ -23,6 +23,11 @@ function index()
     window.location.href = "./index.html";
 }
 
+function cvindex()
+{
+    window.location.href = "../index.html";
+}
+
 
 function about()
 {

@@ -1,0 +1,67 @@
+<!--
+作者:沈雅
+时间:2015-12-20
+版权:GPLv2
+用于Dieling主页
+-->
+<!DOCTYPE html>
+<html lang="zh_cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel = "Shortcut Icon" href=./favicon.ico>
+    <!--sweet-alert -->
+    <script src="swal/sweet-alert.js"></script>
+    <link rel="stylesheet" href="swal/sweet-alert.css">
+    <!--sweet-alert -->
+    <link href="css/imagehover.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="css/sy.css" type="text/css" media="all">
+    <title>沈雅个人主页</title>
+    <header>
+        <br>
+        <!--导航栏-->
+        <table align="center">
+            <tr>
+                <td><a href="javascript:void(0)" onclick="index()">主页</a></td>
+                <td><a href="javascript:void(0)" onclick="freshening()">沈馨</a></td>
+                <td><a href="javascript:void(0)" onclick="about()">关于</a></td>
+            </tr>
+        </table>
+
+        <!--
+        <nav >
+            <ul align = "center">
+                <li><a href="index.html" class="current">主页</a></li>
+                <li><a href="javascript:void(0)" onclick="freshening()">刷新</a></li>
+                <li><a href="about.html" class="current">关于</a></li>
+            </ul>
+        </nav>
+        -->
+        <!--导航栏结束-->
+    </header>
+    <br>
+</head>
+<script language="javascript" src="./js/sy.js"></script><!-- 指定javascript 脚本-->
+<body onload="run();">
+<table align="center">
+<tr>
+    <td align="center">
+		 	<div class="shenya">
+	          <figure class="imghvr-fold-up"><img src="img/logo.jpeg" alt="example-image">
+	            <figcaption>
+	            <figcaption>
+	            <figcaption>
+	              <h2>沈雅</h2>
+	              <p><br>努力，以不负沈雅之名！</p>
+	            </figcaption><a href="javascript:;"></a>
+	          </figure>
+	        </div>
+    </td>
+</tr>
+</table>
+<p align="center"><button style="display:block; width:200px; text-align:center" onclick="warn()">(⊙v⊙)～让我想想</button></p>
+<p align="center"><button style="display:block; width:200px; text-align:center" onclick="rain()">(⊙v⊙)～雨滴效果</button></p>
+<p align="center">这里是沈雅个人主页</p>
+<p align="center">你可以访问我的vroosky主页<a href="https://github.com/vroosky/">https://github.com/vroosky/</a></p>
+<p align="center">CopyRight©2015-2016 Power by <a href="http://shenya.dieling.cc">Dieling</a></p>
+</body>
+</html>

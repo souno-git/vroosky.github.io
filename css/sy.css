@@ -31,10 +31,16 @@ header table tr td {
 
 body table tr td img{
     align-self: center;
+    border:2px solid #fff;
 }
 body p a{
         color: #FFFFFF;
         width: 80px;
         font-size: 16px;
 }
+.shenya{
+        border:1px solid #fff;
+        border-radius:5px;
+}
+
 

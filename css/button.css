@@ -6,14 +6,14 @@ DEMO 1
 */
 
 .a_demo_one {
-	background-color:#3bb3e0;
+	background-color:#5CACEE;
 	padding:10px;
 	position:relative;
 	font-family: 'Open Sans', sans-serif;
 	font-size:12px;
 	text-decoration:none;
 	color:#fff;
-	border: solid 1px #186f8f;
+	border: solid 1px #5CACEE;
 	background-image: linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
 	background-image: -o-linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
 	background-image: -moz-linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);

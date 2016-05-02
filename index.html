@@ -16,6 +16,8 @@
     <link href="css/imagehover.css" rel="stylesheet" media="all">
     <link rel="stylesheet" href="css/sy.css" type="text/css" media="all">
     <link rel="stylesheet" type="text/css" href="css/button.css" />
+    <link rel="stylesheet" href="http://fonts.useso.com/css?family=Lato:200,400" />
+    <link rel="stylesheet" href="css/audioplayer.css" />
     <title>沈雅个人主页</title>
     <header>
         <br>
@@ -43,10 +45,12 @@
 </head>
 <script language="javascript" src="./js/sy.js"></script><!-- 指定javascript 脚本-->
 <body onload="run();">
+<div class="shenya">
+<br>
 <table align="center">
 <tr>
     <td align="center">
-		 	<div class="shenya">
+		 	<div>
 	          <figure class="imghvr-fold-up"><img src="img/logo.jpeg" alt="example-image">
 	            <figcaption>
 	            <figcaption>
@@ -66,11 +70,13 @@
 <p align="center"><a href="#" class="a_demo_one" onclick="warn()">(⊙v⊙)～让我想想</a></p><br>
 </div>
 </td>
+<td></td><td></td><td></td>
 <td>
 <div>
 <p align="center"><a href="#" class="a_demo_one" onclick="rain()">(⊙v⊙)～雨滴效果</a></p><br>
 </div>
 </td>
+<td></td><td></td><td></td>
 <td>
 <div>
 <p align="center"><a href="#" class="a_demo_one" onclick="cv()">(⊙v⊙)～个人简历</a></p><br>
@@ -79,6 +85,16 @@
 </table>
 <p align="center">这里是沈雅个人主页</p>
 <p align="center">你可以访问我的Github主页<a href="https://github.com/vroosky/">https://github.com/vroosky/</a></p>
+</div><br>
+		<div id="player">
+			<audio preload="auto" controls>
+				
+				<source src="audio/002.mp3">
+			</audio>
+			<script src="js/jquery.js"></script>
+			<script src="js/audioplayer.js"></script>
+			<script>$( function() { $( 'audio' ).audioPlayer(); } );</script>
+		</div>
 <p align="center">CopyRight©2015-2016 Power by <a href="http://shenya.dieling.cc">Dieling</a></p>
 </body>
 </html>

@@ -1,100 +1,347 @@
-<!--
-作者:沈雅
-时间:2015-12-20
-版权:GPLv2
-用于Dieling主页
--->
 <!DOCTYPE html>
-<html lang="zh_cn">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel = "Shortcut Icon" href=./favicon.ico>
-    <!--sweet-alert -->
-    <script src="swal/sweet-alert.js"></script>
-    <link rel="stylesheet" href="swal/sweet-alert.css">
-    <!--sweet-alert -->
-    <link href="css/imagehover.css" rel="stylesheet" media="all">
-    <link rel="stylesheet" href="css/sy.css" type="text/css" media="all">
-    <link rel="stylesheet" type="text/css" href="css/button.css" />
-    <link rel="stylesheet" href="http://fonts.useso.com/css?family=Lato:200,400" />
-    <link rel="stylesheet" href="css/audioplayer.css" />
-    <title>沈雅个人主页</title>
-    <header>
-        <br>
-        <!--导航栏-->
-        <table align="center">
-            <tr>
-                <td><a href="javascript:void(0)" onclick="index()">主页</a></td>
-                <td><a href="javascript:void(0)" onclick="freshening()">沈馨</a></td>
-                <td><a href="javascript:void(0)" onclick="about()">关于</a></td>
-            </tr>
-        </table>
+<html lang="en">
 
-        <!--
-        <nav >
-            <ul align = "center">
-                <li><a href="index.html" class="current">主页</a></li>
-                <li><a href="javascript:void(0)" onclick="freshening()">刷新</a></li>
-                <li><a href="about.html" class="current">关于</a></li>
-            </ul>
-        </nav>
-        -->
-        <!--导航栏结束-->
-    </header>
-    <br>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>沈雅个人网站</title>
+	
+    <!-- css -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/nivo-lightbox.css" rel="stylesheet" />
+	<link href="css/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
+	<link href="css/animations.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet">
+	<link href="color/default.css" rel="stylesheet">
+
 </head>
-<script language="javascript" src="./js/sy.js"></script><!-- 指定javascript 脚本-->
-<body onload="run();">
-<div class="shenya">
-<br>
-<table align="center">
-<tr>
-    <td align="center">
-		 	<div>
-	          <figure class="imghvr-fold-up"><img src="img/logo.jpeg" alt="example-image">
-	            <figcaption>
-	            <figcaption>
-	            <figcaption>
-	              <h2>沈雅</h2>
-	              <p><br>努力，以不负沈雅之名！</p>
-	            </figcaption><a href="javascript:;"></a>
-	          </figure>
-	        </div>
-    </td>
-</tr>
-</table>
-<br>
-<table align="center">
-<td>
-<div>
-<p align="center"><a href="#" class="a_demo_one" onclick="warn()">(⊙v⊙)～让我想想</a></p><br>
-</div>
-</td>
-<td></td><td></td><td></td>
-<td>
-<div>
-<p align="center"><a href="#" class="a_demo_one" onclick="rain()">(⊙v⊙)～雨滴效果</a></p><br>
-</div>
-</td>
-<td></td><td></td><td></td>
-<td>
-<div>
-<p align="center"><a href="#" class="a_demo_one" onclick="cv()">(⊙v⊙)～个人简历</a></p><br>
-</div>
-</td>
-</table>
-<p align="center">这里是沈雅个人主页</p>
-<p align="center">你可以访问我的Github主页<a href="https://github.com/vroosky/">https://github.com/vroosky/</a></p>
-</div><br>
-		<div id="player">
-			<audio preload="auto" controls>
-				
-				<source src="http://sc.111ttt.com/up/mp3/177760/957CDE15D554B43A2A92B9048C066BF6.mp3">
-			</audio>
-			<script src="js/jquery.js"></script>
-			<script src="js/audioplayer.js"></script>
-			<script>$( function() { $( 'audio' ).audioPlayer(); } );</script>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+	
+	<section class="hero" id="intro">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 text-right navicon">
+                  <a id="nav-toggle" class="nav_slide_button" href="#"><span></span></a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center inner">
+					<div class="animatedParent">
+						<h1 class="animated fadeInDown">沈雅个人官网</h1>
+						<p class="animated fadeInUp">努力，以不负沈雅之名！</p>
+					</div>
+			   </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                  <a href="#about" class="learn-more-btn btn-scroll">了解更多</a>
+                </div>
+              </div>
+            </div>
+    </section>
+	
+	
+    <!-- Navigation -->
+    <div id="navigation">
+        <nav class="navbar navbar-custom" role="navigation">
+                              <div class="container">
+                                    <div class="row">
+                                          <div class="col-md-2">
+                                                   <div class="site-logo">
+                                                            <a href="index.html" class="brand">沈雅</a>
+                                                    </div>
+                                          </div>
+                                          
+
+                                          <div class="col-md-10">
+                         
+                                                      <!-- Brand and toggle get grouped for better mobile display -->
+                                          <div class="navbar-header">
+                                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                                                <i class="fa fa-bars"></i>
+                                                </button>
+                                          </div>
+                                                      <!-- Collect the nav links, forms, and other content for toggling -->
+                                                      <div class="collapse navbar-collapse" id="menu">
+                                                            <ul class="nav navbar-nav navbar-right">
+                                                                  <li class="active"><a href="#intro">主页</a></li>
+                                                                  <li><a href="#about">关于</a></li>
+																   <li><a href="#service">工作</a></li>
+                                                                  <li><a href="#works">完成</a></li>				                                                                  
+                                                                  
+                                                                  <li><a href="#contact">联系</a></li>
+																  <li><a href="./cv/index.html">简历</a></li>
+                                                            </ul>
+                                                      </div>
+                                                      <!-- /.Navbar-collapse -->
+                             
+                                          </div>
+                                    </div>
+                              </div>
+                              <!-- /.container -->
+                        </nav>
+    </div> 
+    <!-- /Navigation -->  
+
+	<!-- Section: about -->
+    <section id="about" class="home-section color-dark bg-white">
+		<div class="container marginbot-50">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="animatedParent">
+					<div class="section-heading text-center animated bounceInDown">
+					<h2 class="h-bold">沈雅个人网站</h2>
+					<div class="divider-header"></div>
+					</div>
+					</div>
+				</div>
+			</div>
+
 		</div>
-<p align="center">CopyRight©2015-2016 Power by <a href="http://shenya.dieling.cc">Dieling</a></p>
+
+		<div class="container">
+
+		
+        <div class="row">
+		
+		
+            <div class="col-lg-8 col-lg-offset-2 animatedParent">		
+				<div class="text-center">
+					<p>
+					沈雅个人网站是沈雅个人对自己的项目、和想法实现的交流网站。
+					<p>
+					欢迎来到沈雅个人网站，希望我们能够共同成长！ 网站基于Github建立，全部代码使用的是HTML+JS的结构，未来会不断的升级优化。添加很多实用的功能！
+					</p>
+					<a href="#service" class="btn btn-skin btn-scroll">现在做什么</a>
+				</div>
+            </div>
+		
+
+        </div>		
+		</div>
+
+	</section>
+	<!-- /Section: about -->
+	
+	
+	<!-- Section: services -->
+    <section id="service" class="home-section color-dark bg-gray">
+		<div class="container marginbot-50">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div>
+					<div class="section-heading text-center">
+					<h2 class="h-bold">主要工作方向</h2>
+					<div class="divider-header"></div>
+					</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="text-center">
+		<div class="container">
+
+        <div class="row animatedParent">
+            <div class="col-xs-6 col-sm-4 col-md-4">
+				<div class="animated rotateInDownLeft">
+                <div class="service-box">
+					<div class="service-icon">
+						<span class="fa fa-laptop fa-2x"></span> 
+					</div>
+					<div class="service-desc">						
+						<h5>网页开发</h5>
+						<div class="divider-header"></div>
+						<p>
+						网页开发方面主要涉及前端的JS+HTML和后端的PHP+PYTHON语言，没事的时候搞搞非主流的JS或者CSS框架等等。
+						</p>
+						<a href="#" class="btn btn-skin">了解更多</a>
+					</div>
+                </div>
+				</div>
+            </div>
+			<div class="col-xs-6 col-sm-4 col-md-4">
+				<div class="animated rotateInDownLeft slow">
+                <div class="service-box">
+					<div class="service-icon">
+						<span class="fa fa-camera fa-2x"></span> 
+					</div>
+					<div class="service-desc">
+						<h5>心神界</h5>
+						<div class="divider-header"></div>
+						<p>
+						心神界是一个基于开源的新型开放宗教，其中有我一些关于现代宗教的新奇想法的归纳，现在和其他朋友共同维护中。
+						</p>
+						<a href="https://github.com/Divinity-Of-Soul" class="btn btn-skin">了解更多</a>
+					</div>
+                </div>
+				</div>
+            </div>
+			<div class="col-xs-6 col-sm-4 col-md-4">
+				<div class="animated rotateInDownLeft slower">
+                <div class="service-box">
+					<div class="service-icon">
+						<span class="fa fa-code fa-2x"></span> 
+					</div>
+					<div class="service-desc">
+						<h5>灵魂系统</h5>
+						<div class="divider-header"></div>
+						<p>
+						和灵魂系统相关的都有在学习啦，灵魂系统被设计为心神界的中央控制系统，这里则是为一个现阶段技术可以实现的操作系统。
+						</p>
+						<a href="#" class="btn btn-skin">了解更多</a>
+					</div>
+                </div>
+				</div>
+            </div>
+
+        </div>		
+		</div>
+		</div>
+	</section>
+	<!-- /Section: services -->
+	
+
+	<!-- Section: works -->
+    <section id="works" class="home-section color-dark text-center bg-white">
+		<div class="container marginbot-50">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div>
+					<div class="animatedParent">
+					<div class="section-heading text-center">
+					<h2 class="h-bold animated bounceInDown">已完成项目</h2>
+					<div class="divider-header"></div>
+					</div>
+					</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="container">
+
+            <div class="row animatedParent">
+                <div class="col-sm-12 col-md-12 col-lg-12" >
+
+                    <div class="row gallery-item">
+                        <div class="col-md-3 animated fadeInUp">
+							<a href="img/works/1.jpg" title="沈馨系统模拟器" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
+								<img src="img/works/1.jpg" class="img-responsive" alt="img">
+							</a>
+						</div>
+						<div class="col-md-3 animated fadeInUp slow">
+							<a href="img/works/2.jpg" title="沈馨系统模拟器" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
+								<img src="img/works/2.jpg" class="img-responsive" alt="img">
+							</a>
+						</div>
+						<div class="col-md-3 animated fadeInUp slower">
+							<a href="img/works/3.jpg" title="沈馨系统模拟器" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
+								<img src="img/works/3.jpg" class="img-responsive" alt="img">
+							</a>
+						</div>
+						<div class="col-md-3 animated fadeInUp">
+							<a href="img/works/4.jpg" title="汽车衡智能称重系统" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
+								<img src="img/works/4.jpg" class="img-responsive" alt="img">
+							</a>
+						</div>
+					</div>
+	
+                </div>
+            </div>	
+		</div>
+
+	</section>
+	<!-- /Section: works -->
+
+	<!-- Section: contact -->
+    <section id="contact" class="home-section nopadd-bot color-dark bg-gray text-center">
+		<div class="container marginbot-50">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="animatedParent">
+					<div class="section-heading text-center">
+					<h2 class="h-bold animated bounceInDown">联系</h2>
+					<div class="divider-header"></div>
+					</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		
+		<div class="container">
+
+			<div class="row marginbot-80">
+				<div class="col-md-8 col-md-offset-2">
+						<form id="contact-form">
+						<div class="row marginbot-20">
+							<div class="col-md-6 xs-marginbot-20">
+								<input type="text" class="form-control input-lg" id="name" placeholder="姓名" required="required" />
+							</div>
+							<div class="col-md-6">
+								<input type="email" class="form-control input-lg" id="email" placeholder="电子邮件" required="required" />
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+										<input type="text" class="form-control input-lg" id="subject" placeholder="主题" required="required" />
+								</div>
+								<div class="form-group">
+									<textarea name="message" id="message" class="form-control" rows="4" cols="25" required="required"
+										placeholder="内容"></textarea>
+								</div>						
+								<button type="submit" class="btn btn-skin btn-lg btn-block" id="btnContactUs">
+									提交</button>
+							</div>
+						</div>
+						</form>
+				</div>
+			</div>	
+
+
+		</div>
+	</section>
+	<!-- /Section: contact -->
+
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<ul class="footer-menu">
+						<li><a href="#">沈雅</a></li>
+						<li><a href="#">版权所有</a></li>
+					</ul>
+				</div>
+				<div class="col-md-6 text-right">
+					<p>&copy;Copyright 2016 - Shenya. <a href="http://shenya.dieling.cc/">沈雅技术博客</a> by DIELING</p>
+				</div>
+			</div>	
+		</div>
+	</footer>
+
+    <!-- Core JavaScript Files -->
+    <script src="js/jquery.min.js"></script>	 
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.easing.min.js"></script>	
+	<script src="js/jquery.scrollTo.js"></script>
+	<script src="js/jquery.appear.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="js/nivo-lightbox.min.js"></script>
+	
+    <script src="js/custom.js"></script>
+	<script src="js/css3-animate-it.js"></script>
+
 </body>
+
 </html>

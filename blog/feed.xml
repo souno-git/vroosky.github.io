@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>沈雅个人博客</title>
+    <description>沈雅，努力以不负沈雅之名！ 嵌入式、Linux、Cosplay、Acg、动漫、各种文学 全为我所爱矣！  交流联系：QQ88459122
+</description>
+    <link>http://example.com/</link>
+    <atom:link href="http://example.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 29 Jul 2016 15:15:34 +0800</pubDate>
+    <lastBuildDate>Fri, 29 Jul 2016 15:15:34 +0800</lastBuildDate>
+    <generator>Jekyll v3.2.0</generator>
+    
+      <item>
+        <title>Ubuntu下添加开机启动项的2种方法</title>
+        <description>&lt;p&gt;#1、方法一，编辑rc.loacl脚本
+&lt;br /&gt;
+Ubuntu开机之后会执行/etc/rc.local文件中的脚本，&lt;br /&gt;
+所以我们可以直接在/etc/rc.local中添加启动脚本。&lt;br /&gt;
+当然要添加到语句：exit 0 前面才行。&lt;br /&gt;
+代码如下:&lt;br /&gt;
+sudo vi /etc/rc.local&lt;br /&gt;
+然后在 exit 0 前面添加好脚本代码。&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;#2、方法二，添加一个Ubuntu的开机启动服务。
+如果要添加为开机启动执行的脚本文件，&lt;br /&gt;
+可先将脚本复制或者软连接到/etc/init.d/目录下，&lt;br /&gt;
+然后用：update-rc.d xxx defaults NN命令(NN为启动顺序)，&lt;br /&gt;
+将脚本添加到初始化执行的队列中去。&lt;br /&gt;
+注意如果脚本需要用到网络，则NN需设置一个比较大的数字，如99。&lt;br /&gt;
+1) 将你的启动脚本复制到 /etc/init.d目录下&lt;br /&gt;
+ 以下假设你的脚本文件名为 test。&lt;br /&gt;
+2) 设置脚本文件的权限&lt;br /&gt;
+代码如下:&lt;br /&gt;
+$ sudo chmod 755 /etc/init.d/test&lt;br /&gt;
+3) 执行如下命令将脚本放到启动脚本中去：&lt;br /&gt; 
+代码如下:&lt;br /&gt;
+$ cd /etc/init.d&lt;br /&gt;
+$ sudo update-rc.d test defaults 95&lt;br /&gt;
+注：其中数字95是脚本启动的顺序号，按照自己的需要相应修改即可。在你有多个启动脚本，而它们之间又有先后启动的依赖关系时你就知道这个数字的具体作用了。该命令的输出信息参考如下：&lt;br /&gt; 
+代码如下:&lt;br /&gt;
+update-rc.d: warning: /etc/init.d/test missing LSB information&lt;br /&gt;
+update-rc.d: see &lt;a href=&quot;http://wiki.debian.org/LSBInitScripts&quot;&gt;http://wiki.debian.org/LSBInitScripts&lt;/a&gt;&lt;br /&gt;
+Adding system startup for /etc/init.d/test …&lt;br /&gt;
+/etc/rc0.d/K95test -&amp;gt; ../init.d/test&lt;br /&gt;
+/etc/rc1.d/K95test -&amp;gt; ../init.d/test&lt;br /&gt;
+/etc/rc6.d/K95test -&amp;gt; ../init.d/test&lt;br /&gt;
+/etc/rc2.d/S95test -&amp;gt; ../init.d/test&lt;br /&gt;
+/etc/rc3.d/S95test -&amp;gt; ../init.d/test&lt;br /&gt;
+/etc/rc4.d/S95test -&amp;gt; ../init.d/test&lt;br /&gt;
+/etc/rc5.d/S95test -&amp;gt; ../init.d/test&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+卸载启动脚本的方法： &lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;代码如下:&lt;br /&gt;
+$ cd /etc/init.d&lt;br /&gt;
+$ sudo update-rc.d -f test remove&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;命令输出的信息参考如下： &lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;代码如下:&lt;br /&gt;
+Removing any system startup links for /etc/init.d/test …&lt;br /&gt;
+/etc/rc0.d/K95test&lt;br /&gt;
+/etc/rc1.d/K95test&lt;br /&gt;
+/etc/rc2.d/S95test&lt;br /&gt;
+/etc/rc3.d/S95test&lt;br /&gt;
+/etc/rc4.d/S95test&lt;br /&gt;
+/etc/rc5.d/S95test&lt;br /&gt;
+/etc/rc6.d/K95test&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 29 Jul 2016 14:56:49 +0800</pubDate>
+        <link>http://example.com/linux/2016/07/29/Ubuntu-autorun.html</link>
+        <guid isPermaLink="true">http://example.com/linux/2016/07/29/Ubuntu-autorun.html</guid>
+        
+        
+        <category>Linux</category>
+        
+      </item>
+    
+      <item>
+        <title>欢迎来到沈雅网站!</title>
+        <description>&lt;p&gt;欢迎来到沈雅个人网站博客分块这里将是我记录一些平时学习所得的地方和做一些简要发布的地方，希望能给大家带来一点点的帮助。&lt;/p&gt;
+</description>
+        <pubDate>Fri, 29 Jul 2016 14:33:49 +0800</pubDate>
+        <link>http://example.com/%E6%9C%AA%E5%88%86%E7%B1%BB/2016/07/29/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://example.com/%E6%9C%AA%E5%88%86%E7%B1%BB/2016/07/29/welcome-to-jekyll.html</guid>
+        
+        
+        <category>未分类</category>
+        
+      </item>
+    
+  </channel>
+</rss>
